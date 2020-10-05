@@ -7,7 +7,7 @@ var router = require('./routes/route');
 app.use(parser.urlencoded({extended:false}));
 app.use('/pro',router);
 
-mongoose.connect("mongodb+srv://userdb:ava1996@cluster0-nbbrc.mongodb.net/test?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://userdb:userdb@cluster0.cbpmm.mongodb.net/<dbname>?retryWrites=true&w=majority");
 app.listen(process.env.PORT || 3000,()=>{
     console.log("Server Started");
 });
