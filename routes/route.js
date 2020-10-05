@@ -1,5 +1,5 @@
 var express = require('express');
-var { model } = require('../models/model');
+var { model } = require('../model/model');
 const routers = express.Router();
 routers.get('/', (req, res) => {
     res.send('Hai');
